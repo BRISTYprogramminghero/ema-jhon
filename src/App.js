@@ -34,6 +34,7 @@ function App() {
           <Route path="/product/:productKey">
                 <ProductDetail></ProductDetail>
           </Route>
+          
           <Route exact path="/">
             <Shop></Shop>
           </Route>

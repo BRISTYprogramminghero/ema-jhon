@@ -2,8 +2,8 @@ import React from 'react';
 
 const ReviewItem = (props) => {
     // console.log(props);
-    const {name, category, seller, url, key, price} = props.product;
-    console.log(props);
+    const {name, category, seller, url, key, price, quantity} = props.product;
+    // console.log(props);
 
     const reviewItemStyle = {
         borderBottom : '1px solid lightgray',
@@ -17,6 +17,7 @@ const ReviewItem = (props) => {
             <p> Category : {category}</p>
             <p>Seller Name : {seller}</p>
             <p><small>$ : {price}</small></p>
+            <p> Quantity : {quantity}</p>
             <p className="product-name"><small>Url : {url}</small></p>
             <br/>
             <button
